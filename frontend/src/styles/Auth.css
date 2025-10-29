@@ -1,0 +1,105 @@
+/* Apply background only on Login Page */
+.auth-container {
+    background: url(../../public/blue-stationery-table.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Login Container */
+.auth-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    height: auto;
+    backdrop-filter: blur(10px);
+}
+
+/* Title */
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #2c92e0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input Placeholder */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #1482d7;
+    box-shadow: 0 0 8px rgba(20, 130, 215, 0.5);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #0056b3;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+    background: white;
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,53 @@
+.incident-card {
+  background-color: white;
+  border-left: 5px solid #007bff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.incident-card:hover {
+  transform: translateY(-3px);
+}
+
+.high-priority {
+  border-left-color: red;
+  background-color: #fff4f4;
+}
+
+.incident-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.incident-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.priority-badge {
+  background-color: red;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.incident-description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.incident-media img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-top: 12px;
+  border-radius: 8px;
+}

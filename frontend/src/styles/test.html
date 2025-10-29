@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Sidebar (Fixed Left) -->
+    <div class="sidebar">
+        <h2>Live Emergency Feed</h2>
+        <input type="text" placeholder="Filter emergencies..." class="filter-input">
+        <div class="feed-container">
+            <div class="card high-priority">
+                <h3>Fire Outbreak</h3>
+                <p>Location: Dehradun</p>
+                <p>Time: 12:30 PM</p>
+                <span class="priority-label">High Priority</span>
+            </div>
+            <div class="card">
+                <h3>Road Accident</h3>
+                <p>Location: Rajpur Road</p>
+                <p>Time: 10:45 AM</p>
+            </div>
+        </div>
+        <button class="action-btn">Report an Emergency</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h2>Help Requests</h2>
+        <div class="requests-container">
+            <div class="card">
+                <h3>Need Blood Donation</h3>
+                <p>Urgently needed at City Hospital</p>
+                <p>Requested at: 11:15 AM</p>
+            </div>
+            <div class="card">
+                <h3>Lost Child</h3>
+                <p>Last seen near Gandhi Park</p>
+                <p>Requested at: 9:30 AM</p>
+            </div>
+        </div>
+        <button class="action-btn">Request Help</button>
+    </div>
+
+</body>
+
+</html>

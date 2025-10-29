@@ -1,0 +1,138 @@
+/* Top Bar Container */
+.top-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 12px 20px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+/* Website Name & Tagline */
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+}
+
+.tagline {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* Search Bar */
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Add a hover effect */
+.search-bar:hover, .search-bar:focus {
+    border-color: #333;
+}
+
+/* Right Section (Weather + Social Icons) */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.social-icons a[href*="facebook"]:hover {
+    color: #3b5998;
+}
+
+.social-icons a[href*="twitter"]:hover {
+    color: #1DA1F2;
+}
+
+.social-icons a[href*="linkedin"]:hover {
+    color: #0077b5;
+}
+
+.social-icons a[href*="instagram"]:hover {
+    color: #E4405F;
+}
+
+/* Hamburger Menu Icon (Hidden by Default) */
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    margin-left: 20px; /* Space between icons and menu */
+}
+
+/* Menu for Mobile */
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    background: #f0f0f0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 80%;
+    }
+
+    .right-section {
+        display: none; /* Hide social icons on smaller screens */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+}
